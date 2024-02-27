@@ -24,11 +24,10 @@ Before using this template, ensure you have the following installed:
 
 ## Building Resume
 
-To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
+3. To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
 
-   ```sh
-   lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
-   ```
+    ```sh
+    lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
 
 Replace `%` with the name of your LaTeX file.
 
