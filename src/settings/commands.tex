@@ -1,5 +1,7 @@
-% Work experience entries
-% Usage: \experience{Company}{Role}{Dates}
+% Work experience and education entries
+% Usage:
+%   \experience{Designation}{Company}{Dates}
+%   \experience{Institute}{Degree}{Dates}
 \newcommand{\experience}[3]{
-	{\bfseries #1} \textbullet\ #2 \textbullet\ \secondarytext{#3}
+	{\bfseries #1} \textbullet\ #2\hfill\secondarytext{#3}
 }

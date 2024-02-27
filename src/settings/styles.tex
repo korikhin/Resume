@@ -9,22 +9,33 @@
 
 % Sections
 \usepackage{titlesec}
-\titleformat{\subsection}
-	{\normalfont\large\bfseries\color{accent}}
+\titleformat{\section}
+	{\normalfont\Large\bfseries\color{accent}}
 	{}{0em}{}
 
-\titlespacing*{\subsection}
+\titlespacing*{\section}
 	{0pt}
 	{3.25ex plus 1ex minus .2ex}
-	{1ex plus .2ex}
+	{\vspaceDefault}
 
 % Lists
+% Entries (e.g. Experience or Education)
 \usepackage{enumitem}
-\setlist{
-    label=\textasteriskcentered,
+\setlist[itemize]{
+    leftmargin=0pt,
+    labelsep=.5em,
+    label={},
     nosep,
-    topsep=1ex,
-    wide=0pt,
-    leftmargin=*,
-    align=left
+    itemsep=1ex,
+    before=\relax,
+    after=\relax,
+}
+
+% Subentries (e.g. Designation responsibilities)
+\setlist[itemize, 2]{
+	leftmargin=\parindentDefault,
+	label=\textasteriskcentered,
+	nosep,
+	topsep=1ex,
+	%rightmargin=12em
 }

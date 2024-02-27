@@ -1,4 +1,4 @@
-\documentclass[12pt, a4paper]{extarticle}
+\documentclass[11pt, a4paper]{extarticle}
 
 \usepackage{import}
 
@@ -19,22 +19,18 @@
 
 \begin{document}
 	% Header
-	{
-	
-	\setlength{\parskip}{1ex plus .2ex}
-
-	\par {\Huge Your Name}
-	\par {\Large Position}
-
-	}
+	\import{./sections/}{header.tex}
 
 	% Summary
 	\import{./sections/}{summary.tex}
+	
+	% Skills
+	\import{./sections/}{skills.tex}
 
 	% Experience
 	\import{./sections/}{experience.tex}
-
-	% Skills
-	\import{./sections/}{skills.tex}
+	
+	% Education
+	\import{./sections/}{education.tex}
 
 \end{document}

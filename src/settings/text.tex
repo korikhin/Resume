@@ -1,12 +1,21 @@
 \usepackage{fontspec}
 
-\usepackage{microtype}
-\usepackage{setspace}
-\usepackage{indentfirst}
-
 % Font
 \usepackage[default]{raleway}
 
+\usepackage{microtype}
+\usepackage{indentfirst} % Optional
+\usepackage{setspace}
+
 \onehalfspacing
+
+% Negotiate defaults for better control
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+
+% Common constants
+\newlength{\vspaceDefault}
+\setlength{\vspaceDefault}{1ex plus .2ex}
+
+\newlength{\parindentDefault}
+\setlength{\parindentDefault}{2.5ex}
