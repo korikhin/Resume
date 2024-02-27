@@ -1,0 +1,30 @@
+% Links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	linkcolor=accent,
+	citecolor=accent,
+	urlcolor=accent
+}
+
+% Sections
+\usepackage{titlesec}
+\titleformat{\subsection}
+	{\normalfont\large\bfseries\color{accent}}
+	{}{0em}{}
+
+\titlespacing*{\subsection}
+	{0pt}
+	{3.25ex plus 1ex minus .2ex}
+	{1ex plus .2ex}
+
+% Lists
+\usepackage{enumitem}
+\setlist{
+    label=\textasteriskcentered,
+    nosep,
+    topsep=1ex,
+    wide=0pt,
+    leftmargin=*,
+    align=left
+}
