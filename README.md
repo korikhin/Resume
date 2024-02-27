@@ -5,22 +5,25 @@ The *Clean Resume* offers a minimalist and elegant `LaTeX` template for crafting
 ## Prerequisites
 
 Before using this template, ensure you have the following installed:
-- **LaTeX Distribution**: A full LaTeX distribution is necessary. We recommend [TeX Live](https://tug.org/texlive/), as it includes `LuaLaTeX`.
-- **LuaLaTeX**: Optimized for `LuaLaTeX`, this engine supports modern font technologies, offering greater flexibility in font specification and other features.
+- **LaTeX Distribution**: A full LaTeX distribution is necessary. [TeX Live](https://tug.org/texlive/) is recommended, as it includes `LuaLaTeX`.
+- **LuaLaTeX**: This engine supports modern font technologies, offering greater flexibility in font specification and other features.
 
 ## Installation
 
 1. Clone the repository to your local machine:
+
    ```sh
    git clone https://github.com/korikhin/resume.git
 
 2. Navigate to the cloned directory:
+
    ```sh
    cd resume
 
 ## Building Resume
 
 To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
+
    ```sh
    lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
    ```
