@@ -1,12 +1,3 @@
-% Links
-\usepackage{hyperref}
-\hypersetup{
-	colorlinks,
-	linkcolor=accent,
-	citecolor=accent,
-	urlcolor=accent
-}
-
 % Sections
 \usepackage{titlesec}
 \titleformat{\section}
@@ -15,7 +6,7 @@
 
 \titlespacing*{\section}
 	{0pt}
-	{3.25ex plus 1ex minus .2ex}
+	{2\vspaceDefault}
 	{\vspaceDefault}
 
 % Lists
@@ -25,7 +16,7 @@
     leftmargin=0pt,
     label={},
     nosep,
-    itemsep=1ex,
+    itemsep=2\vspaceDefault,
     before=\relax,
     after=\relax,
 }
@@ -33,9 +24,9 @@
 % Subentries (e.g. Designation responsibilities)
 \setlist[itemize, 2]{
 	leftmargin=\parindentDefault,
-	labelsep=1ex,
+	labelsep=\hspaceDefault,
 	label=\textasteriskcentered,
 	nosep,
-	topsep=1ex,
-	%rightmargin=12em
+	topsep=\vspaceDefault,
+	%rightmargin=.2\linewidth
 }

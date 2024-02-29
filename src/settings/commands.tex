@@ -1,13 +1,13 @@
-\newlength{\bulletskip}
-\setlength{\bulletskip}{1ex plus .2ex minus .2ex}
+\newlength{\sepspace}
+\setlength{\sepspace}{.5\hspaceDefault}
 
-\newcommand{\bulletsep}{
-	\hspace{\bulletskip}\textbullet\hspace{\bulletskip}
+\newcommand{\asterisksep}{
+	\hspace{\sepspace}\textasteriskcentered\hspace{\sepspace}
 }
 
-% Work experience and education entries. Usage:
+% Work experience and education degrees. Usage:
 %   \experience{Designation}{Company}{Dates}
 %   \experience{Institute}{Degree}{Dates}
 \newcommand{\experience}[3]{
-	{\bfseries #1} \\ #2\bulletsep\mbox{\secondarytext{#3}}
+	{\bfseries #1}\asterisksep #2 \hfill \mbox{\itshape\secondarytext{#3}}
 }

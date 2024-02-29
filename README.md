@@ -12,22 +12,37 @@ Before using this template, ensure you have the following installed:
 
 ## Installation
 
-1. Clone the repository to your local machine:
+Clone the repository to your local machine:
 
-   ```sh
+```sh
    git clone https://github.com/korikhin/resume.git
+```
 
-2. Navigate to the cloned directory:
+or
 
-   ```sh
+```sh
+   gh repo clone korikhin/resume
+```
+
+Navigate to the cloned directory:
+
+```sh
    cd resume
+```
 
 ## Building Resume
 
-3. To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
+To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
 
-    ```sh
-    lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
+```sh
+   lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
+```
+
+Additionally, to optimize your PDF for web viewing using Ghostscript (`gs`), run:
+
+```sh
+   gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dQUIET -dFastWebView=true -sOutputFile=build/%_web.pdf build/%.pdf
+```
 
 Replace `%` with the name of your LaTeX file.
 
