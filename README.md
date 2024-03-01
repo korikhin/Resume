@@ -12,22 +12,22 @@ Before using this template, ensure you have the following installed:
 
 ## Installation
 
-Clone the repository to your local machine:
+Clone the repository:
 
 ```sh
-   git clone https://github.com/korikhin/resume.git ./resume
+   git clone https://github.com/korikhin/Resume.git
 ```
 
 or
 
 ```sh
-   gh repo clone korikhin/resume ./resume
+   gh repo clone korikhin/Resume
 ```
 
-Navigate to the cloned directory:
+Navigate to the `src` directory:
 
 ```sh
-   cd resume
+   cd Resume/src
 ```
 
 ## Building Resume
