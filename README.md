@@ -15,13 +15,13 @@ Before using this template, ensure you have the following installed:
 Clone the repository to your local machine:
 
 ```sh
-   git clone https://github.com/korikhin/resume.git
+   git clone https://github.com/korikhin/resume.git ./resume
 ```
 
 or
 
 ```sh
-   gh repo clone korikhin/resume
+   gh repo clone korikhin/resume ./resume
 ```
 
 Navigate to the cloned directory:
