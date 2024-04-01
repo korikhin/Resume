@@ -7,27 +7,27 @@ Notably, this template is designed to be highly compatible with resume parsers, 
 ## Prerequisites
 
 Before using this template, ensure you have the following installed:
-- **LaTeX Distribution**: A full LaTeX distribution is necessary. [TeX Live](https://tug.org/texlive/) is recommended, as it includes `LuaLaTeX`.
-- **LuaLaTeX**: This engine supports modern font technologies, offering greater flexibility in font specification and other features.
+- **LaTeX**: A full LaTeX distribution is necessary. [TeX Live](https://tug.org/texlive/) is recommended, as it includes `LuaLaTeX`.
+- **LuaLaTeX**: This engine offers greater flexibility in font specification and other features.
 
 ## Installation
 
 Clone the repository:
 
 ```sh
-   git clone https://github.com/korikhin/Resume.git
+git clone https://github.com/korikhin/Resume.git
 ```
 
 or
 
 ```sh
-   gh repo clone korikhin/Resume
+gh repo clone korikhin/Resume
 ```
 
 Navigate to the `src` directory:
 
 ```sh
-   cd Resume/src
+cd Resume/src
 ```
 
 ## Building Resume
@@ -35,13 +35,13 @@ Navigate to the `src` directory:
 To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
 
 ```sh
-   lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
+lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
 ```
 
 Additionally, to optimize your PDF for web viewing using Ghostscript (`gs`), run:
 
 ```sh
-   gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dQUIET -dFastWebView=true -sOutputFile=build/%_web.pdf build/%.pdf
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dQUIET -dFastWebView=true -sOutputFile=build/%_web.pdf build/%.pdf
 ```
 
 Replace `%` with the name of your LaTeX file.
