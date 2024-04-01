@@ -8,7 +8,7 @@ Notably, this template is designed to be highly compatible with resume parsers, 
 
 Before using this template, ensure you have the following installed:
 - **LaTeX**: A full LaTeX distribution is necessary. [TeX Live](https://tug.org/texlive/) is recommended, as it includes `LuaLaTeX`.
-- **LuaLaTeX**: This engine offers greater flexibility in font specification and other features.
+- **LuaLaTeX**: This engine offers greater flexibility in font specification and other useful features.
 
 ## Installation
 
