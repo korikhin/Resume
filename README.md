@@ -1,12 +1,13 @@
 # Clean Resume
 
-The *Clean Resume* offers a minimalist and elegant `LaTeX` template for crafting professional resumes. It emphasizes clarity and simplicity, presenting your skills and experiences without unnecessary decorations.  
+The _Clean Resume_ offers a minimalist and elegant `LaTeX` template for crafting professional resumes. It emphasizes clarity and simplicity, presenting your skills and experiences without unnecessary decorations.
 
 Notably, this template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by automated HR systems.
 
 ## Prerequisites
 
 Before using this template, ensure you have the following installed:
+
 - **LaTeX**: A full LaTeX distribution is necessary. [TeX Live](https://tug.org/texlive/) is recommended, as it includes `LuaLaTeX`.
 - **LuaLaTeX**: This engine offers greater flexibility in font specification and other useful features.
 
@@ -32,16 +33,10 @@ cd Resume/src
 
 ## Building Resume
 
-To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
+To compile your resume with `LuaLaTeX` for the _best appearance_, use the following command:
 
 ```sh
 lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
-```
-
-Additionally, to optimize your PDF for web viewing using Ghostscript (`gs`), run:
-
-```sh
-gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dQUIET -dFastWebView=true -sOutputFile=build/%_web.pdf build/%.pdf
 ```
 
 Replace `%` with the name of your LaTeX file.
