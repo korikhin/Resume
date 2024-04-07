@@ -1,8 +1,8 @@
 # Clean Resume
 
-The _Clean Resume_ offers a minimalist and elegant `LaTeX` template for crafting professional resumes. It emphasizes clarity and simplicity, presenting your skills and experiences without unnecessary decorations.
+The ***Clean Resume*** offers a minimalist and elegant `LaTeX` template for crafting professional resumes. It emphasizes clarity and simplicity, presenting your skills and experiences without unnecessary decorations.
 
-Notably, this template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by automated HR systems.
+Notably, this template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by **automated HR systems.**
 
 ## Prerequisites
 
@@ -43,4 +43,4 @@ Replace `%` with the name of your LaTeX file.
 
 ## Parser Compatibility
 
-This template is designed with parser compatibility in mind, aiming to improve the chances of accurate interpretation by automated screening systems. By maintaining simplicity and avoiding complex markup and elements, it seeks to perform consistently across various platforms.
+This template is designed with parser compatibility in mind, aiming to improve the chances of accurate interpretation by *automated screening systems*. By maintaining simplicity and avoiding complex markup and elements, it seeks to perform consistently across various platforms.
