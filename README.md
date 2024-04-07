@@ -36,10 +36,8 @@ cd Resume/src
 To compile your resume with `LuaLaTeX` for the _best appearance_, use the following command:
 
 ```sh
-lualatex --synctex=1 --interaction=nonstopmode --output-directory=build %.tex
+lualatex --synctex=1 --interaction=nonstopmode --output-directory=build main.tex
 ```
-
-Replace `%` with the name of your LaTeX file.
 
 ## Parser Compatibility
 
