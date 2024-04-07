@@ -11,3 +11,15 @@
 \newcommand{\experience}[3]{
 	{\bfseries #1}\asterisksep #2 \hfill \mbox{\itshape\secondarytext{#3}}
 }
+
+% Certificate command with optional link. Usage:
+%   \cert{Name}{URL (leave empty if none)}{Dates}
+% Displays "Name (link)" if URL is given, else just "Name"
+\newcommand{\cert}[3]{
+	#1 \def\temp{#2}\def\empty{}%
+	\ifx\temp\empty
+	\else
+	{\itshape(\href{#2}{link})}
+	\fi
+	\hfill \mbox{\itshape\secondarytext{#3}}
+}
