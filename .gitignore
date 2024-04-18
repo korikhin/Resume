@@ -7,7 +7,7 @@
 !LICENSE
 
 !*.tex
-!/examples
+!/examples/*.pdf
 
 # ...even if they are in subdirectories
 !*/
