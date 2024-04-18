@@ -19,7 +19,7 @@ Clone the repository:
 git clone https://github.com/korikhin/Resume.git
 ```
 
-or
+or with the GitHub CLI:
 
 ```sh
 gh repo clone korikhin/Resume
@@ -33,7 +33,7 @@ cd Resume/src
 
 ## Building Resume
 
-To compile your resume with `LuaLaTeX` for the _best appearance_, use the following command:
+To compile your resume with `LuaLaTeX` for the *best appearance*, use the following command:
 
 ```sh
 lualatex --synctex=1 --interaction=nonstopmode --output-directory=build main.tex
