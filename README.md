@@ -1,8 +1,6 @@
-# Clean Resume
+# Resume
 
-The ***Clean Resume*** offers a minimalist and elegant `LaTeX` template for crafting professional resumes. It emphasizes clarity and simplicity, presenting your skills and experiences without unnecessary decorations.
-
-Notably, this template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by **automated HR systems.**
+A minimalist and elegant `LaTeX` template for crafting professional resumes. This template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by **automated HR systems.**
 
 ## Prerequisites
 
