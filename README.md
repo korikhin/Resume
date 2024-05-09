@@ -1,6 +1,6 @@
 # Resume
 
-A minimalist and elegant `LaTeX` template for crafting professional resumes. This template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by **automated HR systems.**
+A minimalist `LaTeX` template for crafting professional resumes. This template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by _**automated HR systems.**_
 
 See the [example](examples/example.pdf "Example").
 
@@ -38,7 +38,3 @@ To compile your resume with `LuaLaTeX` for the _best appearance_, use the follow
 ```sh
 lualatex --synctex=1 --interaction=nonstopmode --output-directory=build main.tex
 ```
-
-## Parser Compatibility
-
-This template is designed with parser compatibility in mind, aiming to improve the chances of accurate interpretation by _automated screening systems_. By maintaining simplicity and avoiding complex markup and elements, it seeks to perform consistently across various platforms.
