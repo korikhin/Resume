@@ -1,6 +1,8 @@
 # Resume
 
-A minimalist and elegant `LaTeX` template for crafting professional resumes. This template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by **automated HR systems.** See [example](examples/example.pdf "Example").
+A minimalist and elegant `LaTeX` template for crafting professional resumes. This template is designed to be highly compatible with resume parsers, avoiding complex formatting and elements to ensure your resume is accessible and easily interpreted by **automated HR systems.**
+
+See the [example](examples/example.pdf "Example").
 
 ## Prerequisites
 
