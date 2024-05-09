@@ -1,25 +1,63 @@
-\newlength{\sepspace}
-\setlength{\sepspace}{.5\hspaceDefault}
-
 \newcommand{\asterisksep}{
-	\hspace{\sepspace}\textasteriskcentered\hspace{\sepspace}
+	~\textasteriskcentered~
 }
 
 % Work experience and education degrees. Usage:
-%   \experience{Designation}{Company}{Dates}
-%   \experience{Institute}{Degree}{Dates}
-\newcommand{\experience}[3]{
-	{\bfseries #1}\asterisksep #2 \hfill \mbox{\itshape\secondarytext{#3}}
+%   1. Work experince
+%   \experience%
+%       [Description] % Omit if none
+%       {Designation}
+%       {Company}
+%       {Dates}
+%
+%   Result:
+%       Designation * Company (Description) ... Dates
+%
+%   2. Education
+%   \experience%
+%       {Institute}
+%       {Degree}
+%       {Dates}
+%
+%   Result:
+%       Institute * Degree ... Dates
+\newcommand{\experience}[4][]{
+    \phantomsection
+    \addcontentsline{toc}{subsection}{#3, #2}
+
+	\def\description{#1}
+	\def\empty{}
+
+	\par {\bfseries #2}%
+	\asterisksep
+	#3%
+	\ifx\description\empty
+	   % Do nothing
+	\else
+	   \hspace{\hspaceDefault}{\itshape\secondarytext{(\,#1\,)}}
+	\fi
+	\hfill \mbox{\itshape\secondarytext{#4}}
 }
 
-% Certificate command with optional link. Usage:
-%   \cert{Name}{URL (leave empty if none)}{Dates}
-% Displays "Name (link)" if URL is given, else just "Name"
-\newcommand{\cert}[3]{
-	#1 \def\temp{#2}\def\empty{}%
-	\ifx\temp\empty
+% Certificate with optional link. Usage:
+%   \cert%
+%       [URL]   % Omit if none
+%       {Name}
+%       {Dates}
+%
+%   Result: Name (link) ... Dates
+\newcommand{\cert}[3][]{
+    \phantomsection
+    \addcontentsline{toc}{subsection}{#2}
+
+    \def\url{#1}
+    \def\empty{}
+
+	\par #2%
+	\ifx\url\empty
+	   % Do nothing
 	\else
-	{\itshape(\href{#2}{link})}
+	   \hspace{\hspaceDefault}{\itshape(\,\href{#1}{link}\,)}
 	\fi
 	\hfill \mbox{\itshape\secondarytext{#3}}
 }
