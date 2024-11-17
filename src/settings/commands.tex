@@ -48,10 +48,26 @@
         \ifx&#1&%
             % Do nothing
         \else
-            \hspaceDefault{\itshape(\,\href{#1}{link}\,)}
+            \hspaceDefault{\itshape(\,\href{#1}{link}\,)}%
         \fi
         \hfill%
-        {\itshape\secondarytext{#3}}% Dates
+        {\itshape\secondarytext{#3}}%
     }%
     \par%
 }
+
+\newcommand{\pagedivider}[1]{
+	\noindent
+	\makebox[\textwidth]{%
+		\color{accent}
+		$\cdots\cdots$%
+		\hspaceDefault%
+		\textsc{#1}%
+		\hspaceDefault%
+		$\cdots\cdots$%
+	}%
+	\par%
+}
+
+\newcommand{\seenextpage}{\pagedivider{see on the next page}}
+\newcommand{\pagecontinue}{\pagedivider{continuation}}
