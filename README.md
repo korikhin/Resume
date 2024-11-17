@@ -40,4 +40,4 @@ To build your resume use the following command:
 lualatex --synctex=1 --interaction=nonstopmode --output-directory=build main.tex
 ```
 
-When using a TeX editor, you must manually add the `--output-directory` flag to your build command, as it is **not** included by default.
+When using a TeX editor, you must manually add the `--output-directory` flag to your build command.
