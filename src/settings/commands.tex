@@ -1,63 +1,57 @@
-\newcommand{\asterisksep}{
-	~\textasteriskcentered~
+\newcommand{\asterisksep}{%
+    \hspaceDefault\textasteriskcentered\hspaceDefault%
 }
 
 % Work experience and education degrees. Usage:
-%   1. Work experince
 %   \experience%
 %       [Description] % Omit if none
-%       {Designation}
-%       {Company}
+%       {Designation/Institute}
+%       {Company/Degree}
 %       {Dates}
 %
 %   Result:
 %       Designation * Company (Description) ... Dates
-%
-%   2. Education
-%   \experience%
-%       {Institute}
-%       {Degree}
-%       {Dates}
-%
-%   Result:
-%       Institute * Degree ... Dates
 \newcommand{\experience}[4][]{
     \phantomsection
     \addcontentsline{toc}{subsection}{#3, #2}
 
-	\def\description{#1}
-	\def\empty{}
-
-	\par {\bfseries #2}%
-	\asterisksep
-	#3%
-	\ifx\description\empty
-	   % Do nothing
-	\else
-	   \hspace{\hspaceDefault}{\itshape\secondarytext{(\,#1\,)}}
-	\fi
-	\hfill \mbox{\itshape\secondarytext{#4}}
+    \noindent
+    \makebox[\textwidth]{%
+        {\bfseries #2}%
+        \asterisksep%
+        #3%
+        \ifx&#1&%
+           % Do nothing
+        \else
+           \hspaceDefault{\itshape\secondarytext{(\,#1\,)}}
+        \fi
+        \hfill%
+        {\itshape\secondarytext{#4}}%
+    }%
+    \par%
 }
 
-% Certificate with optional link. Usage:
-%   \cert%
+% Resources. Usage:
+%   \resource%
 %       [URL]   % Omit if none
-%       {Name}
+%       {Title}
 %       {Dates}
 %
 %   Result: Name (link) ... Dates
-\newcommand{\cert}[3][]{
+\newcommand{\resource}[3][]{
     \phantomsection
     \addcontentsline{toc}{subsection}{#2}
 
-    \def\url{#1}
-    \def\empty{}
-
-	\par #2%
-	\ifx\url\empty
-	   % Do nothing
-	\else
-	   \hspace{\hspaceDefault}{\itshape(\,\href{#1}{link}\,)}
-	\fi
-	\hfill \mbox{\itshape\secondarytext{#3}}
+    \noindent
+    \makebox[\textwidth]{%
+        #2%
+        \ifx&#1&%
+            % Do nothing
+        \else
+            \hspaceDefault{\itshape(\,\href{#1}{link}\,)}
+        \fi
+        \hfill%
+        {\itshape\secondarytext{#3}}% Dates
+    }%
+    \par%
 }

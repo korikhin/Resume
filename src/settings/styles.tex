@@ -7,8 +7,8 @@
 
 \titlespacing*{\section}
 	{0pt}
-	{2\vspaceDefault}
-	{\vspaceDefault}
+	{2\vspacelengthDefault}
+	{\vspacelengthDefault}
 
 % Lists
 \usepackage{enumitem}
@@ -18,17 +18,17 @@
     leftmargin=0pt,
     label={},
     nosep,
-    itemsep=2\vspaceDefault,
+    itemsep=2\vspacelengthDefault,
     before=\relax,
     after=\relax,
 }
 
 % Subentries (e.g. Designation responsibilities)
 \setlist[itemize, 2]{
-	leftmargin=\parindentDefault,
-	labelsep=\hspaceDefault,
+	leftmargin=\parindentlengthDefault,
+	labelsep=\hspacelengthDefault,
 	label=\textasteriskcentered,
 	nosep,
-	topsep=\vspaceDefault,
+	topsep=\vspacelengthDefault,
 	%rightmargin=.2\linewidth, % Adjust for your needs
 }

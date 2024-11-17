@@ -1,10 +1,18 @@
 % Common constants
 
-\newlength{\vspaceDefault}
-\setlength{\vspaceDefault}{1ex plus .2ex}
+\newlength{\vspacelengthDefault}
+\setlength{\vspacelengthDefault}{1ex plus .2ex}
 
-\newlength{\hspaceDefault}
-\setlength{\hspaceDefault}{.5em plus .2em minus .2em}
+\newcommand{\vspaceDefault}{%
+    \vspace{\vspacelengthDefault}%
+}
 
-\newlength{\parindentDefault}
-\setlength{\parindentDefault}{1em plus .2em}
+\newlength{\hspacelengthDefault}
+\setlength{\hspacelengthDefault}{.5em plus .2em minus .2em}
+
+\newcommand{\hspaceDefault}{%
+    \hspace{\hspacelengthDefault}%
+}
+
+\newlength{\parindentlengthDefault}
+\setlength{\parindentlengthDefault}{1em plus .2em}
